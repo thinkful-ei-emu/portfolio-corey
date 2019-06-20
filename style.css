@@ -1,10 +1,10 @@
 html { 
     background-color: #6c7e6b;
-    
 }
 
 body{
-    width: 600px;
+    box-sizing: border-box;
+    width: 320px;
     margin: 0 auto;
     background-color: white;
     padding: 0px 20px 20px 20px;
@@ -50,21 +50,30 @@ li a:hover:not(.active) {
 li a.active {
     color: white;
     background-color: #6c7e6b;
+    /*olive green color */
 }
 
 h1{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px 0;
     color: #7b92a8;
     text-shadow: -1px -1px 1px black;
+    text-align: center;
 }
 
 p {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px 10px;
     color: #688097;
+    text-align: center;
+}
+
+.contact a{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .img-center {
@@ -81,6 +90,56 @@ p {
     border-radius: 50%;
 }
 
-footer {
+/* .contact {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.content-info {
+    display: block;
+    justify-content: center;
+}
+
+
+a:link#info {
+    color: blue;
+}
+a:visited#info {
+    color: blue;
+}
+a:hover#info {
+    background-color: #6c7e6b;
+}
+
+@media screen and (min-width: 500px) {
+    body{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+}
+
+    .nav-bar{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; 
+    }
+
+    h1{
+        display: flex;
+        /* justify-content: center; */
+        padding: 20px 0;
+        color: #7b92a8;
+        text-shadow: -1px -1px 1px black;
+        text-align: center;
+    }
     
+    p {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+        color: #688097;
+        text-align: center;
+    }
 }
