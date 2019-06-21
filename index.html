@@ -16,33 +16,74 @@
     <nav class="nav-bar">
             <ul>
                 <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
             </ul>
     </nav>
 
-    <main>
+    <main role="main">
         <div class="img-center">
             <img class="img-me" src="/images/img_3220.jpg" alt="picture of me in casual formal wear" height="150" width="125">
         </div>
 
         <h1>Hello, I am Corey, nice to meet you!</h1>
-
+        <section class="about-me">
+        <h3>About Me</h3>
         <p>I have always been interested in computers from the time I was old enough to use a mouse and keyboard. 
             The first computer I was able to lay my hands on when I was 10 years old was a 486 dx2 with 80 MHz CPU and 16 MB RAM. 
             I used this machine to play a 2d tank shooting game. Technology has come along way since then and I have tried to keep up with it. 
-            Within the past 6 years I have built, modified and performed hardware updates on 4 different computers. 
-            Thinking about taking my computer knowledge to the next step and unlocking a new outlet for my love of computers landed me here. Writing code. </p>
+            Within the past 6 years I have built, modified and performed hardware updates on various different computers. 
+            Wanting to take my computer knowledge to the next step and unlocking a new outlet for my love of computers landed me here, writing code.
+        </p>
+        </section>
+        
+
+        <section class="skills">
+            <h3>Skills</h3>
+            <p>HTML5, CSS3, JavasSript</p>
+        </section>
+
+
+        <section class="project">
+            <h3>Projects</h3>
+            <p>Bookmarks App, Quiz App</p>
+        </section>
+
+        
+        <section class="contact">
+        <h3>Contact</h3>
+            <p>Send me an email with any questions or inquries you might have!</p>
+                <div form-container>
+                    <form id="form"
+                        action="mailto:monorthwest@gmail.com"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        name="EmailForm">
+
+                        Your Name:<br>
+                        <input id="form-input" type="text" size="30" name="VisitorName" required><br><br>
+
+                        Your Comment:<br>
+                        <textarea id="form-input" name="VisitorComment" rows="4" cols="20" required>
+                        </textarea><br><br>
+
+                        <input type="submit" value="Send Email">
+                    </form>
+                </div> 
+                    
+            <a class="contact-link" id="info" href="mailto:monorthwest@gmail.com?Subject=Hello%20good%20sir!" target="_top">Gmail</a>
+            <a class="contact-link" id="info" href="https://github.com/monorthwest" target="_blank">Github</a>
+            <a class="contact-link" id="info" href="https://www.linkedin.com/in/monorthwest1-moore-newberry-2b20b7184/" target="_blank">Linkedin</a>
+        </section>
+
+        
     </main>
 </body>
 
-<footer role="content-info">
-    <div class="contact">
-        <p id="contact-me">Contact me:</p>
-        <a id="info" href="mailto:monorthwest@gmail.com?Subject=Hello%20good%20sir!" target="_top">Gmail</a>
-        <a id="info" href="https://github.com/monorthwest" target="_blank">Github</a>
-        <a id="info" href="https://www.linkedin.com/in/monorthwest1-moore-newberry-2b20b7184/" target="_blank">Linkedin</a>
+<footer role="">
+    <div class="">
     </div>
 </footer>
 

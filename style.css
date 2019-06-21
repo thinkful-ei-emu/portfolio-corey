@@ -1,14 +1,17 @@
 html { 
-    background-color: #6c7e6b;
+    background-color: #353535;
+    background-image: url("https://r1.ilikewallpaper.net/iphone-se-wallpapers/download/21653/Abstract-Gray-Texture-Background-iphone-se-wallpaper-ilikewallpaper_com.jpg");
+    background-attachment: fixed;
 }
 
 body{
     box-sizing: border-box;
-    width: 320px;
+    width: 60%;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     padding: 0px 20px 20px 20px;
     margin-top: 40px;
+    margin-bottom: 40px;
     border: 5px solid black;
 }
 
@@ -28,7 +31,8 @@ ul {
 }
 
 li {
-    float: left;
+    display: inline-block;
+    /* flex-shrink: 10; */
     /* list-style: none;
     display: inline; */
 
@@ -44,30 +48,73 @@ li a {
 
 li a:hover:not(.active) {
     color: white;
-    background-color: #6c7e6b;
+    background-color: #7a7a7a;
 }
 
 li a.active {
     color: white;
-    background-color: #6c7e6b;
+    background-color: #7a7a7a;
     /*olive green color */
 }
 
 h1{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     padding: 20px 0;
-    color: #7b92a8;
-    text-shadow: -1px -1px 1px black;
+    color: #88a2bb;
     text-align: center;
 }
 
+h3{
+    display: flex;
+    padding: 20px 0;
+    /* text-align: center; */
+    justify-content: center;
+    color: #88a2bb;
+    font-size: 22px;
+}
 p {
     display: flex;
     justify-content: center;
+    margin: 20px 30px;
     padding: 20px 10px;
     color: #688097;
     text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.about-me {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+
+.skills {
+    border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+
+.project {
+    border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+
+.contact {
+    display: block;
+    border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+
+#form-container{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-input {
+    align-items: left;
+    width: 75%;
 }
 
 .contact a{
@@ -103,27 +150,27 @@ p {
 }
 
 
-a:link#info {
-    color: blue;
+a:link.contact-link {
+    color: rgb(102, 102, 255);
 }
-a:visited#info {
-    color: blue;
+a:visited.contact-link {
+    color: rgb(102, 102, 255);
 }
-a:hover#info {
-    background-color: #6c7e6b;
+a:hover.contact-link {
+    background-color: #ffffff;
 }
 
 @media screen and (min-width: 500px) {
     body{
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
 }
 
     .nav-bar{
         margin-left: auto;
         margin-right: auto;
-        width: 80%; 
+        width: 60%; 
     }
 
     h1{
