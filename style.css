@@ -110,7 +110,7 @@ p {
     padding: 20px 10px;
     color: #688097;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
 }
 
@@ -139,6 +139,17 @@ p {
     border-top: 1px solid #8c8b8b;
     text-align: center;
     padding: 20px 0 20px 0;
+}
+
+.project-content {
+    display: inline-block;
+    padding: 20px 5px 40px 5px;
+    overflow: hidden;
+}
+
+.project-divider {
+    border-top: dashed 1px black;
+    margin-top: 40px;
 }
 
 .contact {
