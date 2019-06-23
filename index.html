@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Corey Moore portfolio</title>
@@ -13,49 +12,70 @@
 <header></header>
 
 <body>
-    <nav class="nav-bar">
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-    </nav>
+    <main role="main"></main>
+        <!-- <nav role="navigation" class="nav-bar">
+                <ul class="ul-nav">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav> -->
 
-    <main role="main">
+    <div class="img-wrapper">
         <div class="img-center">
             <img class="img-me" src="/images/img_3220.jpg" alt="picture of me in casual formal wear" height="150" width="125">
         </div>
-
-        <h1>Hello, I am Corey, nice to meet you!</h1>
+    </div>
+        <h1>Hello, I am Corey. Nice to meet you!</h1>
         <section class="about-me">
-        <h3>About Me</h3>
-        <p>I have always been interested in computers from the time I was old enough to use a mouse and keyboard. 
-            The first computer I was able to lay my hands on when I was 10 years old was a 486 dx2 with 80 MHz CPU and 16 MB RAM. 
-            I used this machine to play a 2d tank shooting game. Technology has come along way since then and I have tried to keep up with it. 
-            Within the past 6 years I have built, modified and performed hardware updates on various different computers. 
-            Wanting to take my computer knowledge to the next step and unlocking a new outlet for my love of computers landed me here, writing code.
-        </p>
+            <h3>About Me</h3>
+                <p>I have always been interested in computers from the time I was old enough to use a mouse and keyboard. 
+                    The first computer I was able to lay my hands on when I was 10 years old was a 486 dx2 with 80 MHz CPU and 16 MB RAM. 
+                    I used this machine to play a 2d tank shooting game. 
+                </p>
+
+                <p>
+                I have done everything from customer service sales positions to working on 1000 foot ships hauling cargo around the world as a marine engineer. 
+                </p>
+
+                <p>Technology has come along way since then and I have tried to keep up with it. 
+                    Within the past 6 years I have built, modified and performed hardware updates on various different computers. 
+                    Wanting to take my computer knowledge to the next step and unlocking a new outlet for my love of computers landed me here, writing code.
+                </p>
+                
         </section>
         
 
         <section class="skills">
             <h3>Skills</h3>
-            <p>HTML5, CSS3, JavasSript</p>
+            <ul class="skills-list">
+                <li><img src="http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="HTML icon" height="42" width="42"></li>
+                <li><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="CSS icon" height="38" width="38"></li>
+                <li><img src="http://pluspng.com/img-png/logo-javascript-png-javascript-tutorials-400.png" alt="Javascript icon" height="38" width="42"></li>
+                <li><img src="https://banner2.kisspng.com/20180828/yge/kisspng-1st-century-logo-brand-electric-motor-duoweb-5b85a160141ef6.2288466515354842560824.jpg" alt="jQuery icon" height="42" width="42"></li>
+                <li><img src="https://www.tidbitsolution.com/wp-content/themes/tidbit/img/node/node-js-icon.png" alt="Node icon" height="42" width="42"></li>
+            </ul>
         </section>
 
 
-        <section class="project">
-            <h3>Projects</h3>
-            <p>Bookmarks App, Quiz App</p>
+        <section class="project-container">
+            <div class="projects">
+                <h3>Projects</h3>
+                <p>This application will test your trivia knowledge! Try and beat your high score!</p>
+                <h4><a href="/images/quiz_app.png">Quiz App</a></h4>
+                <img src="/images/quiz_app.png" alt="Smiley face" height="200" width="300">
+                <p>The Bookmark App is a great way to store and rate websites that you would like to visit later or share with friends.</p>
+                <h4><a href="/images/bookmark_App.png">Bookmark App</a></h4>
+                <img src="/images/bookmark_App.png" alt="Smiley face" height="200" width="100">
+            </div>
         </section>
 
         
         <section class="contact">
         <h3>Contact</h3>
             <p>Send me an email with any questions or inquries you might have!</p>
-                <div form-container>
+                <!-- <div form-container>
                     <form id="form"
                         action="mailto:monorthwest@gmail.com"
                         method="POST"
@@ -71,7 +91,7 @@
 
                         <input type="submit" value="Send Email">
                     </form>
-                </div> 
+                </div>  -->
                     
             <a class="contact-link" id="info" href="mailto:monorthwest@gmail.com?Subject=Hello%20good%20sir!" target="_top">Gmail</a>
             <a class="contact-link" id="info" href="https://github.com/monorthwest" target="_blank">Github</a>

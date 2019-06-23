@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html { 
     background-color: #353535;
     background-image: url("https://r1.ilikewallpaper.net/iphone-se-wallpapers/download/21653/Abstract-Gray-Texture-Background-iphone-se-wallpaper-ilikewallpaper_com.jpg");
@@ -5,45 +11,50 @@ html {
 }
 
 body{
-    box-sizing: border-box;
-    width: 60%;
+    width: 95%;
     margin: 0 auto;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     padding: 0px 20px 20px 20px;
     margin-top: 40px;
     margin-bottom: 40px;
     border: 5px solid black;
 }
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
+    display: hidden;
     margin-bottom: 25px;
     justify-content: center;
+    
 }
 
-ul {
+.ul-nav {
+    display: hidden;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #bbbbbb;
+    width: 100%;
 }
 
 li {
     display: inline-block;
+    display: hidden;
     /* flex-shrink: 10; */
     /* list-style: none;
-    display: inline; */
+    display: inline; 
 
 }
 
 li a {
-    display: block;
+    display: hidden;
     color: #666;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
+    text-size-adjust: 14px;
 }
 
 li a:hover:not(.active) {
@@ -54,9 +65,23 @@ li a:hover:not(.active) {
 li a.active {
     color: white;
     background-color: #7a7a7a;
-    /*olive green color */
+    /*olive green color
+} */
+
+.img-center {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.img-me {
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
 h1{
     display: flex;
     justify-content: center;
@@ -73,6 +98,11 @@ h3{
     color: #88a2bb;
     font-size: 22px;
 }
+
+h4{
+    padding: 10px;
+}
+
 p {
     display: flex;
     justify-content: center;
@@ -94,9 +124,21 @@ p {
 	text-align: center;
 }
 
-.project {
+.skills-list ul {
+    text-align: center;
+}
+
+.skills li {
+    display: inline-block;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px 5px 20px 5px;
+}
+
+.projects {
     border-top: 1px solid #8c8b8b;
-	text-align: center;
+    text-align: center;
+    padding: 20px 0 20px 0;
 }
 
 .contact {
@@ -121,20 +163,6 @@ p {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-}
-
-.img-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.img-me {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
 }
 
 /* .contact {
@@ -164,13 +192,13 @@ a:hover.contact-link {
     body{
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
+        width: 50%;
 }
 
     .nav-bar{
         margin-left: auto;
         margin-right: auto;
-        width: 60%; 
+        width: 50%; 
     }
 
     h1{
